@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+ 
+::after, ::before {
+  box-sizing: border-box;
+}
+ 
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+   
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  background: #f9f9f9;
+  font-family: 'Montserrat', sans-serif;
+}
+/* basic css end */
+
+/* common css start */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #919191;
+  border-radius: 5px;
+}
+
+.v-hide {
+  visibility: hidden!important;
+}
+.v-show {
+  visibility: visible!important;
+}
+
+.bg-black {
+  background: #1d1d1d;
+}
+
+.bg-success {
+  background: #18a735 !important;
+}
+.bg-danger {
+  background: #ff4141 !important;
+}
+.bg-warning {
+  background: #ffff33 !important;
+}
+.border-none {
+  border: none !important;
+}
+/*// end of common css */
+
+/* main css start */
+
+/* === header section start === */
+.header {
+  min-height: 200px;
+  width: 100%;
+  background: url(../images/header_bg.png) no-repeat top left/cover;
+}
+/* ===//end of header section === */
+
+/* === toggle_nav section start === */
+.toggle_nav .right-nav,
+.toggle_nav .left-nav {
+  border: 1px solid rgba(29, 29, 29, 0.6);
+  border-radius: 15px;
+  background: #fff;
+  padding: 5px;
+  margin-top: -115px;
+}
+.toggle_nav .left-nav.active,
+.toggle_nav .right-nav.active {
+  border: 1px solid rgba(29, 29, 29, 0.3);
+}
+/* .toggle_nav .left-nav ul {
+  height: 200px;
+  overflow: auto;
+  position: relative;
+} */
+.toggle_nav .right-nav li a,
+.toggle_nav .left-nav li a {
+  padding: 5px 30px;
+  color: #524849;
+  font-weight: 700;
+  display: block;
+  font-size: 16px;
+}
+.toggle_nav .right-nav li:nth-of-type(odd),
+.toggle_nav .left-nav li:nth-of-type(odd) {
+  background: #fbfbfb;
+}
+
+.toggle_nav .scrollbar {
+  width: 5px;
+  height: 100px;
+  background: #919191;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  z-index: 999;
+}
+
+.prev-arrow.slick-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #fff;
+  position: absolute;
+  top: 55px;
+  right: -50px;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 25px;
+  cursor: pointer;
+  visibility: hidden;
+}
+.next-arrow.slick-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #1d1d1d;
+  color: #1d1d1d;
+  position: absolute;
+  bottom: 55px;
+  right: -50px;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 25px;
+  transform: rotate(180deg);
+  cursor: pointer;
+  visibility: hidden;
+}
+.toggle_nav .active .prev-arrow.slick-arrow,
+.toggle_nav .active .next-arrow.slick-arrow {
+  visibility: visible;
+}
+
+.control-btn {
+  height: 230px;
+  margin-top: -62px;
+  font-size: 40px;
+}
+.control-btn button {
+  font-size: 40px;
+  display: block;
+  margin: auto;
+}
+.control-btn .top {
+  color: #fff;
+  padding: 0
+}
+.control-btn .bottom {
+  color: #cfcfcf;
+  padding: 0
+}
+/* ===//end of toggle_nav section === */
+
+
+/* === tab-btn section start === */
+.tab-btn .btn{
+  background: #eee;
+  color: #34394c;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #fff;
+}
+.tab-btn .btn:hover,
+.tab-btn .btn.active{
+  background: #1d1d1d;
+  color: #fff;
+}
+.btn-block+.btn-block {
+  margin-top: 0;
+}
+/* ===//end of tab-btn section === */
+
+/* === chart-btn section start === */
+.chart-btn .btn {
+  background: rgba(255, 255, 1, 1);
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  opacity: 0.6;
+  transition: all 0.2s linear;
+}
+.chart-btn .btn span {
+  display: block;
+  padding: 0 0 10px 20px;
+  font-size: 20px;
+}
+.chart-btn .btn:hover,
+.chart-btn .btn.active {
+  opacity: 1;
+}
+.chart-btn .btn:hover span,
+.chart-btn .btn.active span {
+  transform: rotate(180deg);
+  padding: 0 20px 3px 0px
+}
+/* ===//end of chart-btn section === */
+
+/*=== meter section start === */
+.meter {
+  background: #fbfbfd;
+}
+.meter h3 {
+  font-weight: 800;
+  color: #9f9f9f;
+}
+.meter p {
+  font-weight: 600;
+}
+
+.meter .meter-item .dial {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  width: 30%;
+  transform: rotate(-55deg);
+  transform-origin: left center;
+  transition: all 0.5s linear;
+}
+.meter .meter-item .dial.dial_1{
+  transform: rotate(-85deg);
+}
+.meter .meter-item .dial.dial_2{
+  transform: rotate(-30deg);
+}
+.meter .meter-item .dial.dial_3{
+  transform: rotate(-150deg);
+}
+.meter .meter-item:hover .dial{
+  transform: rotate(-2deg);
+}
+/* ===//end of meter section === */
+
+
+/* === .table-top section start === */
+.table-top p{
+  font-size: 16px;
+  font-weight: 500;
+}
+.table-top .btn-light {
+  background: #eee;
+  font-size: 16px;
+  font-weight: 500;
+}
+.table-top .btn-light:hover {
+  background: #1d1d1d;
+  color: #fff; 
+}
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
+  background: #1d1d1d;
+  color: #fff; 
+}
+/* ===//end of .table-top section === */
+
+/* === table section start === */
+.table td, .table th{
+  text-align: center; 
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+.table th {
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  background: #fafafc;
+}
+.table td {
+  padding: 2px;
+}
+.table th .link {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.table th .link a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  color: #666
+}
+.table td .icon i {
+  color: #828282;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f5f5f5;
+  display: block;
+  padding-top: 9px;
+  margin: 2px;
+}
+.table td .icon i:hover {
+  background: #1d1d1d;
+  color: #fff;
+}
+
+.table .hide-icon {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 40px;
+}
+.table .icon-inner {
+  background: #010101;
+  width: 140px;
+  border-radius: 25px;
+  padding: 2px 0;
+  margin: auto;
+}
+.table .icon-inner::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid black;
+  position: absolute;
+  top: -4px;
+  right: 13px;
+}
+.table .hide-icon {
+  /* display: none; */
+}
+.table .hide-icon .icon-inner i {
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #545454;
+  display: block;
+  padding-top: 7px;
+  margin: 2px;
+}
+.table .val-col {
+  height: 250px;
+}
+.table .val-col .top {
+  height: 125px;
+  padding-top: 50px;
+}
+.table .val-col .bottom {
+  height: 125px;
+  padding-top: 35px;
+}
+
+.table .chart_arrow {
+  height: 250px;
+}
+.table .chart_arrow .top {
+  height: 122px;
+  border-bottom: 3px solid #fff;
+}
+.table .chart_arrow .bottom {
+  height: 125px;
+}
+
+.table .chart_arrow .left {
+  width: 60%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding-right: 20px;
+}
+.table .chart_arrow .left i {
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  width: 30px;
+  height: 30px;
+  display: block;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  padding-top: 6px;
+}
+.table .chart_arrow .bottom .left i{
+  background: #a7ffce;
+}
+.table .chart_arrow .top .left i{
+  background: #ffa5a5;
+}
+.table .chart_arrow .right {
+  width: 40%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding-left: 20px;
+}
+
+.table .range {
+  height: 250px;
+  min-width: 150px;
+}
+.table .range .top{
+  height: 123px;
+  border-bottom: 2px solid #dedede;
+}
+.table .range .bottom{
+  height: 125px;
+}
+.table .range .range-inner {
+  width: 70px;
+  position: absolute;
+}
+.table .range .top .range-inner {
+  bottom: 0;
+  left: 20%;
+}
+.table .range .bottom .range-inner {
+  top: 0;
+  left: 30%;
+}
+.table .range .top .range-inner ul{
+  clip-path: polygon(50% 0%, 100% 35%, 100% 100%, 0 100%, 0 35%);
+  padding: 20px 0 5px 0;
+}
+.table .range .bottom .range-inner ul{
+  clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0);
+  padding: 5px 0 20px 0
+}
+
+
+/* ===//end of table section === */
+
+/* === pagination section start === */
+.pagination-row .container .pagination_inner{
+  padding: 30px 0px;
+  line-height: 60px;
+}
+.pagination-row .container .pagination_inner .page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination-row .container .pagination_inner .page input{
+  width: 55px;
+  height: 50px;
+  text-align: center;
+}
+.pagination-row .container .pagination_inner .pagination_content_page {
+  position: relative;
+}
+
+.pagination-row .container .pagination_inner .pagination_content_page .pagination_content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination-row .container .pagination_inner .pagination_content_page .pagination_content .page_item{
+  width: 42px;
+  height: 42px;
+  line-height: 44px;
+  margin: 0px 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  text-align: center;
+  transition: 0.4s linear;
+}
+
+.pagination-row .container .pagination_inner .pagination_content_page .pagination_content .page_item:hover{
+  transform: translateY(-10px);
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.pagination-row .container .pagination_inner .pagination_content_page .pagination_content .page_item.active{
+   background-color: #000;
+   border: none;
+}
+.pagination-row .container .pagination_inner .pagination_content_page .pagination_content .page_item.active .page_link{
+  color: #fff;
+}
+.pagination-row .container .pagination_inner .pagination_content_page .pagination_content .page_item .page_link{
+  color: #000;
+}
+
+
+.pagination-row .container .pagination_inner .pagination_content_page .pagination_content .arrow{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #fcfcfc;
+  border: 1px solid #ddd;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  line-height: 44px;
+  text-align: center;
+}
+
+.pagination-row .container .pagination_inner .pagination_content_page .pagination_content .arrow a {
+  color: #000;
+}
+
+.pagination-row .container .pagination_inner .pagination_content_page .pagination_content .arrow.left_arrow{
+   left: 35%;
+}
+.pagination-row .container .pagination_inner .pagination_content_page .pagination_content .arrow.right_arrow{
+   left: 65%;
+}
+/* ===//end of pagination section === */
+
+/* === footer section start === */
+/* ===//end of footer section === */
+
+/* #foo, #foo1, #foo2 {
+  font-size: 30px;
+} */
+
+/* font: montserat */
