@@ -33,33 +33,18 @@ $(".control-btn button").click(function(){
   $(".right-col").toggleClass("order-lg-3");
 });
 
-// table icon show/hide 
+//table icon show/hide 
 $(".dots-btn").click(function(){
-  $(".hide-icon").toggleClass("d-none");
+  $(".icon > .hide-icon").toggleClass("d-none");
 });
 
+//table filter dropdown hide remove
+$('.table th .dropdown-menu').click(function(e) {
+  e.stopPropagation();
+});
 
-
-
-
-// // Variables
-// const btn = document.querySelectorAll('.dots-btn');
-
-// // btn.addEventListener('click',(x)=>{
-// //   x.classList.toggle("hide-icon");
-// // })
-
-// btn.forEach((x)=>{
-//   x.addEventListener('click',()=>{
-//     // x.classList.toggle("hide-icon");
-//   });
-// })
-// const btn = document.querySelectorAll('.dots-btn');
-
-// btn.forEach((x)=>{
-    
-//   x.addEventListener('click',()=>{
-//     const hide = document.getElementsByClassName('hide-icon');
-//   });
-    
-// });
+// dropdown close button 
+$('.table th .dropdown-menu .close-btn').click(function(e) {
+  $(".dropdown-menu").removeClass("show");
+  $(".dropdown").removeClass("show");
+});

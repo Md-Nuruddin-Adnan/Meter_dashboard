@@ -70,6 +70,10 @@ body {
 .border-none {
   border: none !important;
 }
+
+button:focus {
+  outline: none;
+}
 /*// end of common css */
 
 /* main css start */
@@ -311,6 +315,70 @@ body {
   background: #fff;
   color: #666
 }
+.table th .link .drop-btn {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  color: #666;
+  border: none;
+  padding: 0;
+}
+.table th .link .dropdown a {
+  width: auto;
+  height: auto;
+}
+.table .dropdown-menu .heading {
+  background: #000;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px 0;
+  margin: -20px -20px 20px -20px;
+}
+.table .dropdown-menu .btn-sm {
+  padding: .5rem .3rem;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  border-radius: .1rem;
+  background: #F2F3F7;
+}
+.table .dropdown-menu .btn-sm:hover {
+  background: #1d1d1d;
+  color: #fff;
+}
+.table .dropdown-menu .find-btn {
+  border: 2px solid #fff;
+  border-radius: .1rem;
+}
+.table .dropdown-menu .sort-btn {
+  padding: .6rem .3rem;
+  margin-left: -8px;
+}
+.table .dropdown-menu .form-control {
+  padding: .3rem;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  border-radius: .1rem;
+}
+.table .dropdown-menu .checkbox-full {
+  height: 240px;
+  overflow: auto;
+}
+
+/* === Dropdown menu of table header start ==== */
+.link .dropdown-menu.show {
+  transform: translate3d(-93%, 37px, 0px) !important;
+}
+.dropdown-menu {
+  padding: 20px;
+  min-width: 15rem;
+}
+/* === end of Dropdown menu of table header ==== */
+
 .table td .icon i {
   color: #828282;
   width: 30px;
@@ -455,90 +523,35 @@ body {
 /* ===//end of table section === */
 
 /* === pagination section start === */
-.pagination-row .container .pagination_inner{
-  padding: 30px 0px;
-  line-height: 60px;
-}
-.pagination-row .container .pagination_inner .page{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pagination-row .container .pagination_inner .page input{
-  width: 55px;
-  height: 50px;
+.footer .form-control {
+  width: 80px;
   text-align: center;
 }
-.pagination-row .container .pagination_inner .pagination_content_page {
-  position: relative;
+.form-control::placeholder {
+  text-align: center;
+  color: #555;
+  font-weight: 600;
 }
-
-.pagination-row .container .pagination_inner .pagination_content_page .pagination_content{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer .left p,
+.footer .right p {
+  color: #555;
+  font-weight: 600;
+  padding: 5px 0 0 15px;
 }
-.pagination-row .container .pagination_inner .pagination_content_page .pagination_content .page_item{
-  width: 42px;
-  height: 42px;
-  line-height: 44px;
-  margin: 0px 10px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+.footer .pagination .page-link {
   border-radius: 50%;
+  color: #555;
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  font-weight: 600;
+  margin: 0 5px;
   text-align: center;
-  transition: 0.4s linear;
 }
-
-.pagination-row .container .pagination_inner .pagination_content_page .pagination_content .page_item:hover{
-  transform: translateY(-10px);
-  cursor: pointer;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
-}
-
-.pagination-row .container .pagination_inner .pagination_content_page .pagination_content .page_item.active{
-   background-color: #000;
-   border: none;
-}
-.pagination-row .container .pagination_inner .pagination_content_page .pagination_content .page_item.active .page_link{
+.footer .pagination .page-link.active,
+.footer .pagination .page-link:hover {
+  background: #1d1d1d;
   color: #fff;
 }
-.pagination-row .container .pagination_inner .pagination_content_page .pagination_content .page_item .page_link{
-  color: #000;
-}
-
-
-.pagination-row .container .pagination_inner .pagination_content_page .pagination_content .arrow{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background-color: #fcfcfc;
-  border: 1px solid #ddd;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  line-height: 44px;
-  text-align: center;
-}
-
-.pagination-row .container .pagination_inner .pagination_content_page .pagination_content .arrow a {
-  color: #000;
-}
-
-.pagination-row .container .pagination_inner .pagination_content_page .pagination_content .arrow.left_arrow{
-   left: 35%;
-}
-.pagination-row .container .pagination_inner .pagination_content_page .pagination_content .arrow.right_arrow{
-   left: 65%;
-}
 /* ===//end of pagination section === */
-
-/* === footer section start === */
-/* ===//end of footer section === */
-
-/* #foo, #foo1, #foo2 {
-  font-size: 30px;
-} */
-
-/* font: montserat */

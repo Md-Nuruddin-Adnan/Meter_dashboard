@@ -23,8 +23,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 m-auto">
-          <div class="row">
-            <div class="col-lg-5 order-lg-1 left-col">
+          <div class="row toggle_nav_main">
+            <div class="col-lg-5 order-lg-1 left-col toggle-col">
               <div class="left-nav shadow position-relative">
                 <span class="scrollbar"></span>
                 <ul class="nav-slide">
@@ -41,13 +41,13 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-2 order-lg-2 d-lg-block d-none middle-col">
+            <div class="col-lg-2 order-lg-2 d-lg-block d-none middle-col toggle-col">
               <div class="control-btn text-center">
                   <button class="btn top"><i class="fal fa-arrow-circle-right"></i></button>
                   <button class="btn bottom"><i class="fal fa-arrow-circle-left"></i></button>
               </div>
             </div>
-            <div class="col-lg-5 order-lg-3 right-col">
+            <div class="col-lg-5 order-lg-3 right-col toggle-col">
               <div class="right-nav position-relative active">
                 <span class="scrollbar"></span>
                 <ul class="nav-slide">
@@ -110,6 +110,7 @@
   <section class="main-content">
     <div class="container">
       <div class="card bg-white p-4 border-none">
+        <!-- === meter start === -->
         <div class="meter py-4">
           <div class="row">
             <div class="col-lg-4 text-center mb-3">
@@ -146,16 +147,17 @@
 
         </div><!--===//meter end ===-->
 
+
         <!--=== tale-top ===-->
-        <div class="table-top d-flex align-items-center justify-content-between mt-5">
-          <div class="div">
+        <div class="table-top d-md-flex align-items-center justify-content-between mt-5 text-md-left text-center">
+          <div class="div mb-md-0 mb-3">
             <p>page 1 of 36872</p>
           </div>
-          <div class="div">
+          <div class="div ">
             <a href="#" class="btn btn-light">Generate PDF</a>
             <a href="#" class="btn btn-light active">Generate CSV</a>
 
-            <div class="btn-group">
+            <div class="btn-group mt-sm-0 mt-3">
               <a href="#" class="btn btn-light border-right"><i class="fas fa-minus"></i></a>
               <a href="#" class="btn btn-light"><i class="fas fa-external-link-alt"></i></a>
             </div>
@@ -181,15 +183,163 @@
                 <th>
                   COL 2
                   <div class="link">
-                    <a href=""><i class="fal fa-times"></i></a>
-                    <a href=""><i class="fas fa-sort-down"></i></a>
+                    <a href="#"><i class="fal fa-times"></i></a>
+                    <div class="dropdown">
+                      <button class="drop-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-sort-down"></i>
+                      </button>
+                      <div class="dropdown-menu shadow-lg" aria-labelledby="dropdownMenuButton">
+                        <h3 class="heading">COL 2 FILTERS</h3>
+                        <div class="body">
+                          <div class="row">
+                            <div class="col-9">
+                              <form>
+                              <div class="input-group border mb-3">
+                                  <input type="text" class="form-control border-0" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                  <div class="input-group-append">
+                                    <button class="btn find-btn btn-sm btn-block" type="submit">Find</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="col-3 pl-0">
+                              <a href="#" class="btn btn-sm sort-btn">Sort</a>
+                            </div>
+                          </div>
+
+                          <div class="card p-2">
+                            <div class="checkbox-full">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_1">
+                                <label class="custom-control-label" for="filter_check_1">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_2">
+                                <label class="custom-control-label" for="filter_check_2">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_3">
+                                <label class="custom-control-label" for="filter_check_3">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_4">
+                                <label class="custom-control-label" for="filter_check_4">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_5">
+                                <label class="custom-control-label" for="filter_check_5">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_6">
+                                <label class="custom-control-label" for="filter_check_6">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_7">
+                                <label class="custom-control-label" for="filter_check_7">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_8">
+                                <label class="custom-control-label" for="filter_check_8">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_9">
+                                <label class="custom-control-label" for="filter_check_9">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_10">
+                                <label class="custom-control-label" for="filter_check_10">13.73</label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="bottom text-center pt-3">
+                            <button class="btn btn-sm border px-4 close-btn">Close</button>
+                            <button class="btn btn-sm px-4">Select</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </th>
                 <th>
                   COL 4
                   <div class="link">
                     <a href=""><i class="fal fa-times"></i></a>
-                    <a href=""><i class="fas fa-sort-down"></i></a>
+                    <div class="dropdown">
+                      <button class="drop-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-sort-down"></i>
+                      </button>
+                      <div class="dropdown-menu shadow-lg" aria-labelledby="dropdownMenuButton">
+                        <h3 class="heading">COL 4 FILTERS</h3>
+                        <div class="body">
+                          <div class="row">
+                            <div class="col-9">
+                              <form>
+                              <div class="input-group border mb-3">
+                                  <input type="text" class="form-control border-0" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                  <div class="input-group-append">
+                                    <button class="btn find-btn btn-sm btn-block" type="submit">Find</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="col-3 pl-0">
+                              <a href="#" class="btn btn-sm sort-btn">Sort</a>
+                            </div>
+                          </div>
+
+                          <div class="card p-2">
+                            <div class="checkbox-full">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check2_1">
+                                <label class="custom-control-label" for="filter_check2_1">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check2_2">
+                                <label class="custom-control-label" for="filter_check2_2">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check2_3">
+                                <label class="custom-control-label" for="filter_check2_3">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check2_4">
+                                <label class="custom-control-label" for="filter_check2_4">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check2_5">
+                                <label class="custom-control-label" for="filter_check2_5">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check2_6">
+                                <label class="custom-control-label" for="filter_check2_6">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check2_7">
+                                <label class="custom-control-label" for="filter_check2_7">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check2_8">
+                                <label class="custom-control-label" for="filter_check2_8">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check2_9">
+                                <label class="custom-control-label" for="filter_check2_9">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check2_10">
+                                <label class="custom-control-label" for="filter_check2_10">13.73</label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="bottom text-center pt-3">
+                            <button class="btn btn-sm border px-4 close-btn">Close</button>
+                            <button class="btn btn-sm px-4">Select</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </th>
                 <th>STATUS</th>
@@ -198,7 +348,81 @@
                   COL 14
                   <div class="link">
                     <a href=""><i class="fal fa-times"></i></a>
-                    <a href=""><i class="fas fa-sort-down"></i></a>
+                    <div class="dropdown">
+                      <button class="drop-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-sort-down"></i>
+                      </button>
+                      <div class="dropdown-menu shadow-lg" aria-labelledby="dropdownMenuButton">
+                        <h3 class="heading">COL 14 FILTERS</h3>
+                        <div class="body">
+                          <div class="row">
+                            <div class="col-9">
+                              <form>
+                              <div class="input-group border mb-3">
+                                  <input type="text" class="form-control border-0" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                  <div class="input-group-append">
+                                    <button class="btn find-btn btn-sm btn-block" type="submit">Find</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="col-3 pl-0">
+                              <a href="#" class="btn btn-sm sort-btn">Sort</a>
+                            </div>
+                          </div>
+
+                          <div class="card p-2">
+                            <div class="checkbox-full">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_3_1">
+                                <label class="custom-control-label" for="filter_check_3_1">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_3_2">
+                                <label class="custom-control-label" for="filter_check_3_2">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_3_3">
+                                <label class="custom-control-label" for="filter_check_3_3">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_3_4">
+                                <label class="custom-control-label" for="filter_check_3_4">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_3_5">
+                                <label class="custom-control-label" for="filter_check_3_5">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_3_6">
+                                <label class="custom-control-label" for="filter_check_3_6">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_3_7">
+                                <label class="custom-control-label" for="filter_check_3_7">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_3_8">
+                                <label class="custom-control-label" for="filter_check_3_8">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_3_9">
+                                <label class="custom-control-label" for="filter_check_3_9">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_3_10">
+                                <label class="custom-control-label" for="filter_check_3_10">13.73</label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="bottom text-center pt-3">
+                            <button class="btn btn-sm border px-4 close-btn">Close</button>
+                            <button class="btn btn-sm px-4">Select</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </th>
                 <th>CHART 1</th>
@@ -207,14 +431,162 @@
                   COL 10
                   <div class="link">
                     <a href=""><i class="fal fa-times"></i></a>
-                    <a href=""><i class="fas fa-sort-down"></i></a>
+                    <div class="dropdown">
+                      <button class="drop-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-sort-down"></i>
+                      </button>
+                      <div class="dropdown-menu shadow-lg" aria-labelledby="dropdownMenuButton">
+                        <h3 class="heading">COL 10 FILTERS</h3>
+                        <div class="body">
+                          <div class="row">
+                            <div class="col-9">
+                              <form>
+                              <div class="input-group border mb-3">
+                                  <input type="text" class="form-control border-0" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                  <div class="input-group-append">
+                                    <button class="btn find-btn btn-sm btn-block" type="submit">Find</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="col-3 pl-0">
+                              <a href="#" class="btn btn-sm sort-btn">Sort</a>
+                            </div>
+                          </div>
+
+                          <div class="card p-2">
+                            <div class="checkbox-full">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_4_1">
+                                <label class="custom-control-label" for="filter_check_4_1">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_4_2">
+                                <label class="custom-control-label" for="filter_check_4_2">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_4_3">
+                                <label class="custom-control-label" for="filter_check_4_3">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_4_4">
+                                <label class="custom-control-label" for="filter_check_4_4">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_4_5">
+                                <label class="custom-control-label" for="filter_check_4_5">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_4_6">
+                                <label class="custom-control-label" for="filter_check_4_6">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_4_7">
+                                <label class="custom-control-label" for="filter_check_4_7">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_4_8">
+                                <label class="custom-control-label" for="filter_check_4_8">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_4_9">
+                                <label class="custom-control-label" for="filter_check_4_9">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_4_10">
+                                <label class="custom-control-label" for="filter_check_4_10">13.73</label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="bottom text-center pt-3">
+                            <button class="btn btn-sm border px-4 close-btn">Close</button>
+                            <button class="btn btn-sm px-4">Select</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </th>
                 <th>
                   COL 11
                   <div class="link">
                     <a href=""><i class="fal fa-times"></i></a>
-                    <a href=""><i class="fas fa-sort-down"></i></a>
+                    <div class="dropdown">
+                      <button class="drop-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-sort-down"></i>
+                      </button>
+                      <div class="dropdown-menu shadow-lg" aria-labelledby="dropdownMenuButton">
+                        <h3 class="heading">COL 11 FILTERS</h3>
+                        <div class="body">
+                          <div class="row">
+                            <div class="col-9">
+                              <form>
+                              <div class="input-group border mb-3">
+                                  <input type="text" class="form-control border-0" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                  <div class="input-group-append">
+                                    <button class="btn find-btn btn-sm btn-block" type="submit">Find</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="col-3 pl-0">
+                              <a href="#" class="btn btn-sm sort-btn">Sort</a>
+                            </div>
+                          </div>
+
+                          <div class="card p-2">
+                            <div class="checkbox-full">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_5_1">
+                                <label class="custom-control-label" for="filter_check_5_1">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_5_2">
+                                <label class="custom-control-label" for="filter_check_5_2">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_5_3">
+                                <label class="custom-control-label" for="filter_check_5_3">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_5_4">
+                                <label class="custom-control-label" for="filter_check_5_4">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_5_5">
+                                <label class="custom-control-label" for="filter_check_5_5">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_5_6">
+                                <label class="custom-control-label" for="filter_check_5_6">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_5_7">
+                                <label class="custom-control-label" for="filter_check_5_7">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_5_8">
+                                <label class="custom-control-label" for="filter_check_5_8">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_5_9">
+                                <label class="custom-control-label" for="filter_check_5_9">13.73</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filter_check_5_10">
+                                <label class="custom-control-label" for="filter_check_5_10">13.73</label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="bottom text-center pt-3">
+                            <button class="btn btn-sm border px-4 close-btn">Close</button>
+                            <button class="btn btn-sm px-4">Select</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </th>
               </tr>
@@ -473,7 +845,9 @@
                     <a href="#"> <i class="fas fa-pencil-alt"></i></a>
                     <a href="#"><i class="far fa-eye"></i></a>
                     <a href="#"><i class="fas fa-trash-alt"></i></a>
-                    <button class="btn dots-btn p-0"><i class="far fa-ellipsis-h"></i></button>
+                    <button class="btn dots-btn p-0">
+                      <i class="far fa-ellipsis-h"></i>
+                    </button>
                  
                     <div class="hide-icon d-none">
                       <div class="icon-inner position-relative text-center d-flex align-items-center justify-content-center">
@@ -710,33 +1084,45 @@
   </section>
   <!-- ===//end of main-content section === -->
  
-  <!-- === ? section start === -->
-  <section class="pagination-row">
+  <!-- === pagination section start === -->
+  <footer class="footer py-5">
     <div class="container">
-      <div class="row pagination_inner">
-        <div class="col-md-2 page">
-          <input type="number"><span class="ml-3">rows per page</span>
+      <div class="d-flex justify-content-md-between justify-content-center">
+        <div class="left d-md-flex d-none align-content-center">
+          <input type="number" class="form-control" placeholder="10">
+          <p>rows per page</p>
         </div>
-        <div class="col-md-8 pagi my-auto">
-         <nav class="pagination_content_page">
-           <ul class="pagination_content">
-             <!-- arrows -->
-             <span class="left_arrow arrow"><a href="#"><i class="fas fa-angle-left"></i></a></span>
-             <li class="page_item active"><a class="page_link" href="#">1</a></li>
-             <li class="page_item"><a class="page_link" href="#">2</a></li>
-             <li class="page_item"><a class="page_link" href="#">3</a></li>
-             <li class="page_item"><a class="page_link" href="#"><i class="fas fa-ellipsis-h"></i></a></li>
-             <span class="right_arrow arrow"><a href="#"><i class="fas fa-angle-right"></i></a></span>
-           </ul>
-         </nav>
+
+        <div class="middle">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item pr-sm-4 pl-3">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true"><i class="far fa-chevron-left"></i></span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link active shadow-lg" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#"><i class="far fa-ellipsis-h"></i></a></li>
+              <li class="page-item pl-sm-4 pl-3">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true"><i class="far fa-chevron-right"></i></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="col-md-2 page">
-          <input type="number"><span class="ml-3">Go</span>
+
+        <div class="right d-md-flex d-none align-content-center">
+          <input type="number" class="form-control" placeholder="|">
+          <p>GO</p>
         </div>
       </div>
     </div>
-  </section>
-  <!-- ===//end of ? section === -->
+  </footer>
+  <!-- === //end of pagination section === -->
+
 
  
 
